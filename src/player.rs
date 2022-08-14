@@ -1,3 +1,5 @@
+mod play_sound;
+
 static LEFT_OCTAVE: i32 = 4;
 static RIGHT_OCTAVE: i32 = 5;
 
