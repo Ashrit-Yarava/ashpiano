@@ -5,10 +5,6 @@
 // Sample File Structure
 //
 // notes/
-// => octave_0/
-//  => a.mp3
-//  => a-sharp.mp3
-//  => b.mp3
 // => octave_1/
 //  => c.mp3
 //  => c-sharp.mp3
@@ -29,7 +25,6 @@
 // => octave_5/
 // => octave_6/
 // => octave_7/
-// => octave_8/
 //
 // Refer to image in the README for a visual of the individual keys.
 
@@ -88,15 +83,4 @@ pub fn ensure_notes(root_dir: &str) {
             check_file(&format!("{}/{}/{}", root_dir, octave, file));
         }
     }
-
-    check_dir(&format!("{}/octave_0/", root_dir));
-
-    check_file(&format!("{}/octave_0/a.mp3", root_dir));
-    check_file(&format!("{}/octave_0/a-sharp.mp3", root_dir));
-    check_file(&format!("{}/octave_0/b.mp3", root_dir));
-
-    check_dir(&format!("{}/octave_8/", root_dir));
-
-    check_file(&format!("{}/octave_8/c-sharp.mp3", root_dir));
-    check_file(&format!("{}/octave_8/c.mp3", root_dir));
 }

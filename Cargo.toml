@@ -6,6 +6,13 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-exitcode = "1.1.2" # A collection of exitcodes.
-console = "0.15.1" # Handle keyboard events.
-play = "0.5.3"     # Play audio files.
+exitcode = "1.1.2"      # A collection of exitcodes.
+console = "0.15.1"      # Handle keyboard events.
+rodio = "0.15.0"        # Audio playback
+futures = "0.3.21"
+futures-util = "0.3.21"
+rayon = "1.5"           # Async Runtime
+
+[dependencies.async-std]
+version = "1.6"
+features = ["attributes", "tokio1"]
