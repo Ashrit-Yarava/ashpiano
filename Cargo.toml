@@ -6,6 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-exitcode = "1.1.2"   # A collection of exitcodes.
-crossterm = "0.25.0" # A terminal input monitoring utility.
-rodio = "0.15.0"     # Library for playing mp3 files.
+exitcode = "1.1.2" # A collection of exitcodes.
+console = "0.15.1" # Handle keyboard events.
+play = "0.5.3"     # Play audio files.
