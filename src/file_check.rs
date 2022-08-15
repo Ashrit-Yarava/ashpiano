@@ -65,22 +65,12 @@ pub fn ensure_notes(root_dir: &str) {
         check_dir(&format!("{}/{}/", root_dir, octave));
 
         let keys: [&str; 12] = [
-            "c.mp3",
-            "c-sharp.mp3",
-            "d.mp3",
-            "d-sharp.mp3",
-            "e.mp3",
-            "f.mp3",
-            "f-sharp.mp3",
-            "g.mp3",
-            "g-sharp.mp3",
-            "a.mp3",
-            "a-sharp.mp3",
-            "b.mp3",
+            "c", "c-sharp", "d", "d-sharp", "e", "f", "f-sharp", "g", "g-sharp", "a", "a-sharp",
+            "b",
         ];
 
         for file in keys {
-            check_file(&format!("{}/{}/{}", root_dir, octave, file));
+            check_file(&format!("{}/{}/{}.wav", root_dir, octave, file));
         }
     }
 }
