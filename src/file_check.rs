@@ -33,7 +33,9 @@ use std::path::Path;
 use std::process;
 
 fn file_not_found(file: String) {
-    println!("FILE or DIRECTORY not found. Error File: {}", file);
+    println!("Note FILE or DIRECTORY not found. Error File: {}", file);
+    println!("Download the notes from the project release page.");
+    println!("https://github.com/Ashrit-Yarava/ashpiano/");
     process::exit(exitcode::OSFILE); // OS File error indicates a file was not found on the
                                      // operating system.
 }

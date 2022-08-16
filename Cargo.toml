@@ -1,16 +1,25 @@
 [package]
 name = "ashpiano"
-version = "0.1.0"
+version = "0.0.1"
+authors = ["Ashrit Yarava <ashdragon95@gmail.com>"]
 edition = "2021"
+description = "A command line piano with support for 7 octaves and playing 2 octaves at once."
+documentation = "https://github.com/Ashrit-Yarava/ashpiano/README.md"
+readme = "README.md"
+homepage = "https://github.com/Ashrit-Yarava/ashpiano/"
+repository = "https://github.com/Ashrit-Yarava/ashpiano/"
+license-file = "LICENSE"
+keywords = ["piano", "music", "instrument", "ashpiano", "play"]
+categories = ["multimedia::audio"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [profile.release]
 opt-level = 3
 
 [dependencies]
-exitcode = "1.1.2"      # A collection of exitcodes.
-console = "0.15.1"      # Handle keyboard events.
-rodio = "0.15.0"        # Audio playback
+exitcode = "1.1.2" # A collection of exitcodes.
+console = "0.15.1" # Handle keyboard events.
+rodio = "0.15.0"   # Audio playback
 
 [dependencies.async-std]
 version = "1.6"
