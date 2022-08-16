@@ -20,7 +20,3 @@ opt-level = 3
 exitcode = "1.1.2" # A collection of exitcodes.
 console = "0.15.1" # Handle keyboard events.
 rodio = "0.15.0"   # Audio playback
-
-[dependencies.async-std]
-version = "1.6"
-features = ["attributes", "tokio1"]
