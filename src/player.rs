@@ -37,26 +37,26 @@ fn keyboard_event_loop() {
                 'a' => left_octave = 1,
                 's' => left_octave = 2,
                 'd' => left_octave = 3,
-                'f' => left_octave = 4,
 
                 // Right octave keys
                 'v' => play_sound(&stream_handle, right_octave, "c"),
-                'g' => play_sound(&stream_handle, left_octave, "c-sharp"),
+                'g' => play_sound(&stream_handle, right_octave, "c-sharp"),
                 'b' => play_sound(&stream_handle, right_octave, "d"),
-                'h' => play_sound(&stream_handle, left_octave, "d-sharp"),
+                'h' => play_sound(&stream_handle, right_octave, "d-sharp"),
                 'n' => play_sound(&stream_handle, right_octave, "e"),
                 'm' => play_sound(&stream_handle, right_octave, "f"),
-                'k' => play_sound(&stream_handle, left_octave, "f-sharp"),
+                'k' => play_sound(&stream_handle, right_octave, "f-sharp"),
                 ',' => play_sound(&stream_handle, right_octave, "g"),
-                'l' => play_sound(&stream_handle, left_octave, "g-sharp"),
+                'l' => play_sound(&stream_handle, right_octave, "g-sharp"),
                 '.' => play_sound(&stream_handle, right_octave, "a"),
-                ';' => play_sound(&stream_handle, left_octave, "a-sharp"),
+                ';' => play_sound(&stream_handle, right_octave, "a-sharp"),
                 '/' => play_sound(&stream_handle, right_octave, "b"),
 
                 // Changing octaves.
-                'i' => right_octave = 5,
-                'o' => right_octave = 6,
-                'p' => right_octave = 7,
+                'i' => right_octave = 4,
+                'o' => right_octave = 5,
+                'p' => right_octave = 6,
+                '[' => right_octave = 7,
 
                 // Print which octaves are currently in use.
                 '\\' => octave_info(left_octave, right_octave),
